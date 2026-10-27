@@ -6,7 +6,7 @@ A fast desktop companion for teleporting on the Whiteout Survival world map thro
 
 - [Download the Windows installer](https://github.com/AshBeeFoo/WoS-Teleporter/releases/latest/download/WoS.Quick.Teleport.Setup.exe)
 - [Download the portable ZIP](https://github.com/AshBeeFoo/WoS-Teleporter/releases/latest/download/WoS.Quick.Teleport.zip)
-- [View release notes](https://github.com/AshBeeFoo/WoS-Teleporter/releases/latest)
+- [View release notes](https://github.com/AshBeeFoo/WoS-Teleporter/blob/main/RELEASE_NOTES.md)
 
 The installer is recommended for most users. It creates normal Windows shortcuts and supports the app's update workflow. The portable ZIP can be extracted and run without installation.
 
