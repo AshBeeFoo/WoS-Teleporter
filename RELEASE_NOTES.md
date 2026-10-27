@@ -1,4 +1,17 @@
-## WoS Quick Teleport 2.5.0
+## WoS Quick Teleport 2.5.1
+
+- Replaced the four subprocess-based ADB taps in the normal calibrated route
+  with direct clicks inside the visible emulator window.
+- Removed two blocking ADB preflight calls before the map tap. The Status-page
+  readiness checks still require the emulator and World map before starting.
+- Changed the already-open Teleport-panel check from an expensive full-screen
+  scan to a small calibrated-region probe.
+- Removed the fixed pause after the map tap. Each following control is clicked
+  as soon as it becomes visible.
+- Added a regression test that enforces a sub-second calibrated click path and
+  verifies that it does not invoke ADB between clicks.
+
+### Included from 2.5.0
 
 - Added adaptive button detection: calibrated positions remain the fast path, followed by a full-emulator search after 120 ms.
 - The app now clicks the detected button itself and automatically learns updated upper- and lower-panel positions.
