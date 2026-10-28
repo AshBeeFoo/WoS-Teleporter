@@ -1,4 +1,14 @@
-## WoS Quick Teleport 2.5.1
+## WoS Quick Teleport 2.5.2
+
+- Calibrated button searches now recognize partially animated button frames in
+  the small user-recorded region instead of waiting for the full 70% global
+  image-match threshold.
+- Full-emulator fallback still uses the stricter configured threshold, keeping
+  recovery scans protected from unrelated matches.
+- This specifically reduces the Advanced and Confirm waits identified by the
+  per-stage timing log while preserving visual verification before every click.
+
+### Included from 2.5.1
 
 - Replaced the four subprocess-based ADB taps in the normal calibrated route
   with direct clicks inside the visible emulator window.
